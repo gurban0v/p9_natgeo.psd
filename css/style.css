@@ -1,0 +1,32 @@
+/*------------------------------------start resourses---------------------------*/
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+/*------------------------------------end resourses-----------------------------*/
+/*------------------------------------start settings----------------------------*/
+* {outline: 1px dashed #ccc;}
+div, header, nav, menu, footer {outline: 1px solid cyan;}
+
+.clearfix:after {content: ''; display: block; clear: both;}
+.left {float: left;}
+.right {float: right;}
+.container {max-width: 960px; margin: 0 auto; padding: 0 10px;}
+/*mr0 последним элементам*/
+.mr0 {margin-right: 0 !important;}
+/*-----------------------------------end settings--------------------------------*/
+/*-----------------------------------start global--------------------------------*/
+html {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
+img {box-sizing: content-box;}
+body {font: 14px/20px 'Lato', sans-serif, Helvetica, Arial sans-serif;}
+a {text-decoration: none;}
+ul {list-style-type: none; padding: 0; margin: 0;}
+p {margin: 0;}
+ul {list-style-type: none;}
+div, header, nav, menu, footer, section {box-sizing: border-box; overflow: hidden;}
+/*---------------------------------end global------------------------------------*/
+
+/*----------------------------------start general styles-------------------------*/
+/*----------------------------------end general styles---------------------------*/
+
+/*----------------------------------start sprite---------------------------------*/
+/*----------------------------------end sprite-----------------------------------*/
