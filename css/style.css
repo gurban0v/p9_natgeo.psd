@@ -6,10 +6,13 @@
 * {outline: 1px dashed #ccc;}
 div, header, nav, menu, footer {outline: 1px solid cyan;}
 
+.row:after {content: ''; display: block; clear: both;}
+.col:after {content: ''; display: block; clear: both;}
 .clearfix:after {content: ''; display: block; clear: both;}
 .left {float: left;}
 .right {float: right;}
-.container {max-width: 960px; margin: 0 auto; padding: 0 10px;}
+/*.container {min-width: 940px; margin: 0 auto; position: relative;}*/
+.container {max-width: 940px; margin: 0 auto; position: relative;}
 /*mr0 последним элементам*/
 .mr0 {margin-right: 0 !important;}
 /*-----------------------------------end settings--------------------------------*/
@@ -29,4 +32,79 @@ div, header, nav, menu, footer, section {box-sizing: border-box; overflow: hidde
 /*----------------------------------end general styles---------------------------*/
 
 /*----------------------------------start sprite---------------------------------*/
+
+.ico_column-right-play, .ico_top-menu-kids, .ico_menu-left-maps, .ico_menu-left-magazine, 
+.ico_top-menu-tv, .ico_menu-left-events, .ico_menu-left-blogs, .ico_menu-left-science, 
+.ico_menu-left-explorers, .ico_social-twitter, .ico_top-menu-adventure, .ico_menu-left-games, 
+.ico_top-menu-environment, .ico_social-facebook, .ico_top-menu-home, .ico_menu-left-education, 
+.ico_menu-left-daily-news, .ico_search-go, .ico_menu-left-trips, .ico_column-right-prev-arrow, 
+.ico_search-glass, .ico_column-right-next-arrow, .ico_social-youtube, .ico_top-menu-photography, 
+.ico_column-right-check, .ico_column-right-cart, .ico_top-menu-travel, .ico_content-bottom-plus, 
+.ico_slider-bottom-grid, .ico_sing-up-icon, .ico_column-right-star, .ico_column-right-calendar, 
+.ico_slider-bottom-pause, .ico_sing-up-login, .ico_slider-bottom-clock, .ico_content-bottom-book, 
+.ico_top-menu-video, .ico_slider-bottom-list, .ico_column-right-camera, .ico_content-star, 
+.ico_content-empty-star, .ico_search-down {
+  display: inline-block;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat
+}
+
+
+
+.ico_search-go { background-position: -109px -50px; height: 22px; width: 22px;}
+.ico_search-glass { background-position: -0px -112px; height: 21px; width: 21px;}
+.ico_search-down { background-position: -83px -52px; height: 9px; width: 18px;}
+
+.ico_sing-up-icon { background-position: -134px -50px; height: 16px; width: 16px;}
+.ico_sing-up-login { background-position: -134px -114px; height: 16px; width: 14px;}
+
+.ico_column-right-play { background-position: -0px -0px; height: 36px; width: 36px;}
+.ico_column-right-prev-arrow { background-position: -110px -88px; height: 21px; width: 21px;}
+.ico_column-right-next-arrow { background-position: -21px -112px; height: 21px; width: 21px;}
+.ico_column-right-check { background-position: -87px -112px; height: 18px; width: 18px;}
+.ico_column-right-cart { background-position: -105px -112px; height: 18px; width: 18px;}
+.ico_column-right-star { background-position: -134px -66px; height: 16px; width: 16px;}
+.ico_column-right-calendar { background-position: -134px -82px; height: 16px; width: 16px;}
+.ico_column-right-camera { background-position: -57px -133px; height: 12px; width: 16px;}
+
+
+
+.ico_top-menu-kids { background-position: -36px -0px; height: 29px; width: 21px;}
+.ico_top-menu-tv { background-position: -26px -36px; height: 26px; width: 26px;}
+.ico_top-menu-adventure { background-position: -49px -62px; height: 25px; width: 26px;}
+.ico_top-menu-environment { background-position: -109px -0px; height: 25px; width: 25px;}
+.ico_top-menu-home { background-position: -0px -88px; height: 24px; width: 26px;}
+.ico_top-menu-photography { background-position: -61px -112px; height: 18px; width: 26px;}
+.ico_top-menu-travel { background-position: -134px -0px; height: 17px; width: 26px;}
+.ico_top-menu-video { background-position: -15px -133px; height: 14px; width: 26px;}
+
+
+.ico_social-twitter { background-position: -19px -62px; height: 25px; width: 30px;}
+.ico_social-facebook { background-position: -109px -25px; height: 25px; width: 13px;}
+.ico_social-youtube { background-position: -42px -112px; height: 19px; width: 19px;}
+
+
+.ico_menu-left-maps { background-position: -57px -0px; height: 26px; width: 26px;}
+.ico_menu-left-magazine { background-position: -0px -36px; height: 26px; width: 26px;}
+.ico_menu-left-events { background-position: -52px -36px; height: 26px; width: 26px;}
+.ico_menu-left-blogs { background-position: -83px -0px; height: 26px; width: 26px;}
+.ico_menu-left-science { background-position: -83px -26px; height: 26px; width: 23px;}
+.ico_menu-left-explorers { background-position: -0px -62px; height: 26px; width: 19px;}
+.ico_menu-left-games { background-position: -75px -62px; height: 25px; width: 26px;}
+.ico_menu-left-education { background-position: -26px -88px; height: 23px; width: 32px;}
+.ico_menu-left-daily-news { background-position: -58px -88px; height: 22px; width: 26px;}
+.ico_menu-left-trips { background-position: -84px -88px; height: 21px; width: 26px;}
+
+
+.ico_slider-bottom-grid { background-position: -134px -34px; height: 16px; width: 16px;}
+.ico_slider-bottom-pause { background-position: -134px -98px; height: 16px; width: 14px;}
+.ico_slider-bottom-clock { background-position: -109px -72px; height: 15px; width: 15px;}
+.ico_slider-bottom-list { background-position: -41px -133px; height: 14px; width: 16px;}
+
+
+.ico_content-bottom-plus { background-position: -134px -17px; height: 17px; width: 17px;}
+.ico_content-bottom-book { background-position: -0px -133px; height: 15px; width: 15px;}
+.ico_content-star { background-position: -73px -133px; height: 12px; width: 13px;}
+.ico_content-empty-star { background-position: -86px -133px; height: 12px; width: 13px;}
 /*----------------------------------end sprite-----------------------------------*/
+
