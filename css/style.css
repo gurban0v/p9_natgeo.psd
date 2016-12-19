@@ -1,6 +1,7 @@
 /*------------------------------------start resourses---------------------------*/
-@import url(normalize.css);
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700');
+/*font-family: 'Roboto', sans-serif;*/
+
 /*------------------------------------end resourses-----------------------------*/
 /*------------------------------------start settings----------------------------*/
 * {outline: 1px dashed #ccc;}
@@ -20,12 +21,12 @@ div, header, nav, menu, footer {outline: 1px solid cyan;}
 html {box-sizing: border-box;}
 *, *::before, *::after {box-sizing: inherit;}
 img {box-sizing: content-box;}
-body {font: 14px/20px 'Lato', sans-serif, Helvetica, Arial sans-serif;}
+body {font: 12px/12px Arial sans-serif; background-color: #fbfbfb}
 a {text-decoration: none;}
 ul {list-style-type: none; padding: 0; margin: 0;}
 p {margin: 0;}
 ul {list-style-type: none;}
-div, header, nav, menu, footer, section {box-sizing: border-box; overflow: hidden;}
+div, header, nav, menu, footer, section {box-sizing: border-box;}
 /*---------------------------------end global------------------------------------*/
 
 /*----------------------------------start general styles-------------------------*/
@@ -50,14 +51,6 @@ div, header, nav, menu, footer, section {box-sizing: border-box; overflow: hidde
 }
 
 
-
-.ico_search-go { background-position: -109px -50px; height: 22px; width: 22px;}
-.ico_search-glass { background-position: -0px -112px; height: 21px; width: 21px;}
-.ico_search-down { background-position: -83px -52px; height: 9px; width: 18px;}
-
-.ico_sing-up-icon { background-position: -134px -50px; height: 16px; width: 16px;}
-.ico_sing-up-login { background-position: -134px -114px; height: 16px; width: 14px;}
-
 .ico_column-right-play { background-position: -0px -0px; height: 36px; width: 36px;}
 .ico_column-right-prev-arrow { background-position: -110px -88px; height: 21px; width: 21px;}
 .ico_column-right-next-arrow { background-position: -21px -112px; height: 21px; width: 21px;}
@@ -67,22 +60,9 @@ div, header, nav, menu, footer, section {box-sizing: border-box; overflow: hidde
 .ico_column-right-calendar { background-position: -134px -82px; height: 16px; width: 16px;}
 .ico_column-right-camera { background-position: -57px -133px; height: 12px; width: 16px;}
 
-
-
-.ico_top-menu-kids { background-position: -36px -0px; height: 29px; width: 21px;}
-.ico_top-menu-tv { background-position: -26px -36px; height: 26px; width: 26px;}
-.ico_top-menu-adventure { background-position: -49px -62px; height: 25px; width: 26px;}
-.ico_top-menu-environment { background-position: -109px -0px; height: 25px; width: 25px;}
-.ico_top-menu-home { background-position: -0px -88px; height: 24px; width: 26px;}
-.ico_top-menu-photography { background-position: -61px -112px; height: 18px; width: 26px;}
-.ico_top-menu-travel { background-position: -134px -0px; height: 17px; width: 26px;}
-.ico_top-menu-video { background-position: -15px -133px; height: 14px; width: 26px;}
-
-
 .ico_social-twitter { background-position: -19px -62px; height: 25px; width: 30px;}
 .ico_social-facebook { background-position: -109px -25px; height: 25px; width: 13px;}
 .ico_social-youtube { background-position: -42px -112px; height: 19px; width: 19px;}
-
 
 .ico_menu-left-maps { background-position: -57px -0px; height: 26px; width: 26px;}
 .ico_menu-left-magazine { background-position: -0px -36px; height: 26px; width: 26px;}
@@ -95,12 +75,10 @@ div, header, nav, menu, footer, section {box-sizing: border-box; overflow: hidde
 .ico_menu-left-daily-news { background-position: -58px -88px; height: 22px; width: 26px;}
 .ico_menu-left-trips { background-position: -84px -88px; height: 21px; width: 26px;}
 
-
 .ico_slider-bottom-grid { background-position: -134px -34px; height: 16px; width: 16px;}
 .ico_slider-bottom-pause { background-position: -134px -98px; height: 16px; width: 14px;}
 .ico_slider-bottom-clock { background-position: -109px -72px; height: 15px; width: 15px;}
 .ico_slider-bottom-list { background-position: -41px -133px; height: 14px; width: 16px;}
-
 
 .ico_content-bottom-plus { background-position: -134px -17px; height: 17px; width: 17px;}
 .ico_content-bottom-book { background-position: -0px -133px; height: 15px; width: 15px;}
@@ -108,3 +86,206 @@ div, header, nav, menu, footer, section {box-sizing: border-box; overflow: hidde
 .ico_content-empty-star { background-position: -86px -133px; height: 12px; width: 13px;}
 /*----------------------------------end sprite-----------------------------------*/
 
+
+/*--------------------------------------header-----------------------------------*/
+
+header {padding-top: 40px;}
+
+/*logo*/
+.logo{
+  width: 162px;
+  height: 48px;
+  float: left;
+  background: url(../img/logo.png) no-repeat;
+}
+/*logo end*/
+
+/*search-form*/
+header form {
+  width: 444px;
+  height: 50px;
+  float: left;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background: #fff;
+
+  margin-left: 150px;
+  position: relative;
+  padding-top: 14px;
+}
+
+header input {
+  margin-left: 40px;
+  width: 220px;
+  border: none;
+}
+
+header input:focus{outline: none;}
+
+header input[placeholder] {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+header input[type="text"]::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+header input:focus::-webkit-input-placeholder { opacity: 0; transition: opacity 0.9s ease;}
+
+.ico_search-glass { background-position: -0px -112px; height: 21px; width: 21px;
+position: absolute;
+left: 10px;
+top: 15px;
+}
+
+header ul {
+  float: right; 
+  margin: 0;
+  width: 140px;
+  height: 25px;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+
+  margin-right: 40px;
+}
+header ul li {
+  padding: 5px 30px 5px 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #cacaca;
+  font-size: 15px;
+}
+
+.ico_search-go { 
+  background-position: -109px -50px; height: 22px; width: 22px;
+  display: block;
+  
+  position: absolute;
+  top: 14px;
+  right: 10px;
+}
+.ico_search-down { 
+  background-position: -83px -52px; height: 9px; width: 18px;
+  display: block;
+  
+  position: absolute;
+  top: 22px;
+  right: 53px;
+}
+/*search-form end*/
+
+/*login*/
+.login-block {
+  width: 160px;
+  height: 50px;
+  float: right;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background: #fff;
+
+  position: relative;
+  padding: 7px 22px 0 15px;
+  text-align: center;
+}
+
+.login-block p {
+  color: #999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  margin-top: 5px;
+}
+
+.login { float: right;}
+.sign-up { float: left;}
+
+.line {
+  display: inline-block;
+  width: 1px;
+  height: 25px;
+  background-color: #eaeaea;
+  position: absolute;
+  left: 80px;
+  top: 10px;
+}
+
+
+.ico_sing-up-icon { background-position: -134px -50px; height: 16px; width: 16px;}
+.ico_sing-up-login { background-position: -134px -114px; height: 16px; width: 14px;}
+
+/*login end*/
+
+
+/*top-menu*/
+.ico_top-menu-home { background-position: -0px -88px; height: 24px; width: 26px;}
+.ico_top-menu-photography { background-position: -61px -112px; height: 18px; width: 26px;}
+.ico_top-menu-video { background-position: -15px -133px; height: 14px; width: 26px;}
+.ico_top-menu-environment { background-position: -109px -0px; height: 25px; width: 25px;}
+.ico_top-menu-travel { background-position: -134px -0px; height: 17px; width: 26px;}
+.ico_top-menu-adventure { background-position: -49px -62px; height: 25px; width: 26px;}
+.ico_top-menu-tv { background-position: -26px -36px; height: 26px; width: 26px;}
+.ico_top-menu-kids { background-position: -36px -0px; height: 29px; width: 21px;}
+
+.top-menu {
+  height: 140px;
+  padding: 40px 45px 0;
+  position:relative;
+}
+
+.top-menu:after {
+  content:"";
+  width: 100%;
+  height: 5px;
+  background-color: #777;
+  
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 1;
+}
+
+.menu-item {
+  float: left; 
+  margin-right: 50px; 
+  text-align: center;
+}
+
+.ico-wrap {
+  display: inline-block;
+  height: 25px;
+  width: 35px;
+  text-align: center;
+  z-index: 2;
+  background-color: #fbfbfb;
+  position: relative;
+  
+}
+
+.ico-wrap span {}
+
+.top-menu div:nth-of-type(2) span { margin-top: 3px;}
+.top-menu div:nth-of-type(3) span { margin-top: 6px;}
+.top-menu div:nth-of-type(5) span { margin-top: 5px;}
+
+.menu-item a {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  padding-top: 25px;
+}
+
+.top-menu div:nth-of-type(1) a, 
+.top-menu div a:hover {
+  color: #fdcc05;
+}
+
+
+/*top-menu end*/
+
+/*--------------------------------------header end--------------------------------
