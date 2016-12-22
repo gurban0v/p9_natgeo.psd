@@ -1,4 +1,4 @@
-/*------------------------------------start resourses---------------------------*/
+------------------------------------start resourses---------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700');
 /*font-family: 'Roboto', sans-serif;*/
 
@@ -50,15 +50,6 @@ div, header, nav, menu, footer, section {box-sizing: border-box;}
   background-repeat: no-repeat
 }
 
-
-.ico_column-right-play { background-position: -0px -0px; height: 36px; width: 36px;}
-.ico_column-right-prev-arrow { background-position: -110px -88px; height: 21px; width: 21px;}
-.ico_column-right-next-arrow { background-position: -21px -112px; height: 21px; width: 21px;}
-.ico_column-right-check { background-position: -87px -112px; height: 18px; width: 18px;}
-.ico_column-right-cart { background-position: -105px -112px; height: 18px; width: 18px;}
-.ico_column-right-star { background-position: -134px -66px; height: 16px; width: 16px;}
-.ico_column-right-calendar { background-position: -134px -82px; height: 16px; width: 16px;}
-.ico_column-right-camera { background-position: -57px -133px; height: 12px; width: 16px;}
 
 .ico_social-twitter { background-position: -19px -62px; height: 25px; width: 30px;}
 .ico_social-facebook { background-position: -109px -25px; height: 25px; width: 13px;}
@@ -562,25 +553,26 @@ header ul li {
   height: 148px;
   border: 1px solid #eee;
   background-color: #fbfbfb;
-  padding: 5px 5px 0 5px;
+  padding: 5px 5px 0 4px;
   margin-bottom: 10px;
 }
 
 .art-img img { margin-bottom: 10px;}
 
-.art-img > p:nth-of-type(1){
-  float: left;
+.art-descr p:first-child {
   color: #777;
   font-size: 14px;
   font-weight: 600;
+
+  margin-bottom: 4px;
 }
 
-.art-img > p:nth-of-type(2){
-  float: left;
+.art-descr p:last-child {
   color: #a0a0a0;
   font-size: 11px;
   font-weight: 400;
 }
+
 
 .stars {float: right;}
 
@@ -590,8 +582,6 @@ header ul li {
   font-weight: 400;
 }
 
-
-
 .art-text p{
   color: #989898;
   font-size: 12px;
@@ -600,14 +590,286 @@ header ul li {
 
   margin-left: 4px;
 }
-
-
-
-
-
-
 /*-------------articles end*/
 
+
+
+/*------------articles-right*/
+
+.ico_column-right-star { background-position: -134px -66px; height: 16px; width: 16px;}
+.ico_column-right-camera { background-position: -57px -133px; height: 12px; width: 16px;}
+.ico_column-right-play { background-position: -0px -0px; height: 36px; width: 36px;}
+.ico_column-right-prev-arrow { background-position: -110px -88px; height: 21px; width: 21px;}
+.ico_column-right-next-arrow { background-position: -21px -112px; height: 21px; width: 21px;}
+.ico_column-right-calendar { background-position: -134px -82px; height: 16px; width: 16px;}
+
+.ico_column-right-check { background-position: -87px -112px; height: 18px; width: 18px;}
+.ico_column-right-cart { background-position: -105px -112px; height: 18px; width: 18px;}
+
+
+.articles-right { 
+  width: 224px; 
+  min-height: 875px;
+  
+  position: relative;
+  top: -375px;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.popular-news {
+  width: 224px;
+  height: 342px;
+
+  margin-bottom: 18px;
+}
+
+.pop-article {
+  margin-bottom: 7px;
+}
+
+.pop-header {
+  width: 224px;
+  height: 34px;
+  border: 1px solid #eee;
+  background-color: #fff;
+
+  margin-bottom: 7px;
+  padding-top: 10px;
+  padding-left: 34px;
+  position: relative;
+}
+
+.pop-header p {
+  color: #777;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pop-header span {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+
+.pop-article {
+  width: 224px;
+  height: 148px;
+  border: 1px solid #eee;
+  background-color: #fbfbfb;
+
+  padding: 5px 5px 0 5px;
+}
+
+.pop-article img {
+  margin-bottom: 8px;
+}
+
+.pop-descr p:first-child{
+  color: #777;
+  font-size: 13px;
+  font-weight: 600;
+
+  margin-bottom: 4px;
+}
+
+.pop-descr p:last-child {
+  color: #a0a0a0;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.stars p{
+  color: #a0a0a0;
+  font-size: 11px;
+  font-weight: 400;
+
+  margin-top: 4px;
+}
+
+/*popular videos*/
+.popular-videos {
+  min-height: 266px;
+  margin-bottom: 18px;
+}
+
+.pop-video {
+  height: 111px;
+  border: 1px solid #eee;
+  background-color: #fbfbfb;
+
+  padding-top: 4px;
+  padding-left: 4px;
+  margin-bottom: 6px;
+
+  position: relative;
+}
+
+.pop-vid-txt {
+  position: absolute;
+  top: 70px;
+  left: 14px;
+}
+
+.pop-vid-txt p:first-child{
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+
+  margin-bottom: 3px;
+}
+
+.pop-vid-txt p:last-child {
+  color: #fff;
+  font-family: "Myriad Pro";
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.pop-video span{
+  position: absolute;
+  top: 55px;
+  right: 12px;
+}
+/*popular videos end*/
+
+
+/*events*/
+.events {
+  min-height: 184px;
+  margin-bottom: 7px;
+}
+
+.ev-header {
+  min-height: 32px;
+  border: 1px solid #eee;
+  background-color: #fff;
+
+  margin-bottom: 6px;
+  padding: 11px 0 0 34px;
+  position: relative;
+}
+
+.ev-cont {
+  width: 224px;
+  height: 146px;
+  background-color: #fff;
+  border: 1px solid #eee;
+
+  padding: 8px 6px 0 5px;
+}
+
+
+.ev-header p {
+  height: 12px;
+  color: #777;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ev-header span:nth-of-type(1) {
+  width: 1px;
+  height: 19px;
+  background-color: #eaeaea;
+
+  position: absolute;
+  top: 6px;
+  right: 34px;
+}
+
+.ev-header span:nth-of-type(2) {
+  position: absolute;
+  top: 8px;
+  left: 11px;
+}
+
+.ev-header span:nth-of-type(3) {
+  position: absolute;
+  top: 5px;
+  right: 40px;
+}
+
+.ev-header span:nth-of-type(4) {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+
+
+.ev-cont p:nth-of-type(1) {
+  color: #777;
+  font-size: 12px;
+  font-weight: 600;
+  
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 8px;
+}
+
+
+.ev-cont img {
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.ev-cont p:nth-of-type(2) {
+  color: #777;
+  font-family: "Myriad Pro";
+  font-size: 11px;
+  font-weight: 400;
+}
+/*events end*/
+
+.shop-subs-btn {
+  min-width: 224px;
+  min-height: 33px;
+  text-align: right;
+  
+}
+
+.shop-subs-btn div{
+  display: block;
+  float: left;
+  
+  height: 33px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  position: relative;
+  padding-top: 10px;
+}
+
+.shop-subs-btn > div:first-child {
+  width: 96px;
+  margin-right: 7px;
+}
+
+.shop-subs-btn div span{
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.shop-subs-btn > div:last-child {
+  width: 120px;
+}
+
+.shop-subs-btn > div:last-child span {
+
+}
+
+.shop-subs-btn a {
+  color: #777;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-right: 7px;
+}
+/*shop-subs-btn end*/
+
+
+
+
+/*------------articles-right end*/
 
 
 /*--------------------------------------main end----------------------------------
