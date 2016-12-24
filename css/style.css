@@ -51,12 +51,6 @@ div, header, nav, menu, footer, section {box-sizing: border-box;}
 }
 
 
-.ico_social-twitter { background-position: -19px -62px; height: 25px; width: 30px;}
-.ico_social-facebook { background-position: -109px -25px; height: 25px; width: 13px;}
-.ico_social-youtube { background-position: -42px -112px; height: 19px; width: 19px;}
-
-.ico_content-bottom-plus { background-position: -134px -17px; height: 17px; width: 17px;}
-.ico_content-bottom-book { background-position: -0px -133px; height: 15px; width: 15px;}
 /*----------------------------------end sprite-----------------------------------*/
 
 
@@ -278,7 +272,7 @@ header ul li {
 .ico_menu-left-trips { background-position: -84px -88px; height: 21px; width: 26px;}
 /*icon-sprite end*/
 
-
+.content {height: 875px;}
 
 .slider {width: 692px;}
 /*.slider:after {
@@ -867,9 +861,216 @@ header ul li {
 /*shop-subs-btn end*/
 
 
+/*magazines*/
+.ico_content-bottom-plus { background-position: -134px -17px; height: 17px; width: 17px;}
+.ico_content-bottom-book { background-position: -0px -133px; height: 15px; width: 15px;}
+
+.magazines {
+  margin-top: 10px; 
+  position: relative;
+}
+
+.mag-items > div:nth-of-type(4) {
+  position: absolute;
+  top: 42px;
+  right: 0;
+}
+
+.mag-item {
+  width: 228px;
+  height: 200px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  padding: 9px 6px 44px;
+  margin-right: 10px;
+}
+
+.mag-header {
+  width: 940px;
+  height: 32px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  padding: 10px 0 0 38px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+.mag-header a{
+  color: #777;
+font-size: 12px;
+font-weight: 600;
+}
+
+.mag-header span {
+  position: absolute;
+  top: 8px;
+  left: 13px;
+
+}
+
+.mag-pic-block {
+  max-width: 216px;
+  height: 147px;
+  border: 1px solid #eee;
+  background-color: #fbfbfb;
+  
+  background-color: #fff;
+  text-align: center;
+  padding-top: 11px;
+  margin-bottom: 10px;
+}
+
+.mag-pic-block p{
+  color: #777;
+font-size: 13px;
+font-weight: 600;
+margin-top: 10px;
+}
+
+.mag-stars p{
+  color: #a0a0a0;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+
+.mag-subs-btn {
+  float: right;
+  
+  width: 104px;
+  height: 33px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  padding: 10px 13px 12px 30px;
+  position: relative;
+}
+
+.mag-subs-btn a{
+  color: #777;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.mag-subs-btn span{
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+/*magazines end*/
 
 
 /*------------articles-right end*/
 
+/*--------------------------------------main end----------------------------------*/
 
-/*--------------------------------------main end----------------------------------
+
+
+/*--------------------------------------footer-------------------------------------*/
+
+.ico_social-facebook { background-position: -109px -25px; height: 25px; width: 13px;}
+.ico_social-twitter { background-position: -19px -62px; height: 25px; width: 30px;}
+.ico_social-youtube { background-position: -42px -112px; height: 19px; width: 19px;}
+
+
+footer {
+  height: 70px;
+  background-color: #1f1f1f;
+  position: relative;
+  top: -110px;
+}
+
+footer .container {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+
+.foo-form {
+  width: 338px;
+  height: 40px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  background-color: #3e3e3e;
+}
+
+.foo-form input {
+  width: 235px;
+  height: 40px;
+  background-color: #3e3e3e;
+  border-radius: 4px;
+  border: none;
+  padding-left: 20px;
+}
+
+.foo-form input:focus{outline: none;}
+
+.foo-form input[type="text"]::-webkit-input-placeholder {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.foo-form input[placeholder] {color: #fff;}
+
+.foo-form a {
+  width: 100px;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid #292929;
+  background-color: #1f1f1f;
+  background-color: rgba(31, 31, 31, 0.6);
+  padding: 8px 10px;
+
+  color: #848484;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.foo-social {
+  margin-left: 18px;
+  padding-top: 5px;
+}
+
+.foo-social a{
+  margin-right: 5px;
+}
+
+
+.foo-menu {margin-top: 10px;}
+
+.foo-menu li{
+  float: left;
+  border-right: 1px solid #777777;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.foo-menu li:nth-of-type(4) {
+  border: none;
+}
+
+
+.foo-menu a{
+  font-size: 12px;
+  font-weight: 400;
+  color: #bbb;
+}
+
+.foo-menu p{
+  color: #4a4a4a;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/*--------------------------------------footer end----------------------------------*/
